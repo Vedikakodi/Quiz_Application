@@ -1,0 +1,178 @@
+/* Reset default margin, padding, font-family, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Style the body with a background image */
+body {
+    background-image: url("quizback.jpg");
+    background-position: top;
+    background-size: 20%;
+}
+
+/* Style the main application container */
+.app {
+    background: #ffffffc9;
+    position: relative;
+    top: 60px;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+/* Style the heading inside the .app container */
+.app h1 {
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding: 20px;
+}
+
+/* Style the quiz section background */
+.quiz {
+    padding-bottom: 30px;
+    background: #e5e5e5; /* Change the background color here */
+}
+
+/* Style the heading inside the .quiz section */
+.quiz h2 {
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+}
+
+/* Style the button elements with the class 'btn' */
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px; /* Decreased padding for buttons */
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background: #222;
+    color: #fff;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px; /* Decreased padding for buttons */
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background: #9aeabc;
+}
+
+.incorrect {
+    background: #ff9393;
+}
+
+/* Style the Start button */
+#start-quiz-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#start-quiz-btn:hover {
+    background: #003366; /* Darker background on hover */
+}
+
+/* Style the user name input field */
+#user-name {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    background: #f0f0f0; /* Change the background color here */
+}
+
+/* Add focus styles to the user name input */
+#user-name:focus {
+    border-color: #001e4d;
+    box-shadow: 0 0 5px rgba(0, 30, 77, 0.5);
+}
+
+/* Style the leaderboard container background */
+#leaderboard {
+    display: block;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #939df5; /* Change the background color here */
+}
+
+#leaderboard h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+	font-style: italic;
+}
+
+#rankings {
+    list-style: none;
+    padding: 0;
+}
+
+#rankings li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#rankings p {
+    font-size: 20px;
+	font-family: cursive;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#view-leaderboard-btn {
+    background-color: #033d47;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#view-leaderboard-btn:hover {
+    background-color: #0056b3;
+}

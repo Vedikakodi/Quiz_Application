@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Quiz</h1>
+        <input type="text" id="user-name" placeholder="Enter your name">
+        <button id="start-quiz-btn">Start Quiz</button>
+        <div class="quiz" style="display: none;">
+            <h2 id="question">Question goes here</h2>
+            <div id="answer-buttons">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <button id="next-btn" style="display: none;">Next</button>
+        </div>
+        <div id="score-display" style="display: none;"></div> <!-- Added this score display -->
+        <button id="view-leaderboard-btn" style="display: none;">View Leaderboard</button> <!-- Button to view the leaderboard -->
+        <div id="leaderboard" style="display: none;">
+            <h2>Leaderboard</h2>
+            <ol id="rankings">
+                <!-- Leaderboard rankings will be added here -->
+            </ol>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
